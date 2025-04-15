@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Message</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: background-color 0.5s ease;
+        }
+        
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #gif-container {
+            margin-bottom: 20px;
+            max-width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        #gif-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        #open-btn {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        #open-btn:hover {
+            background-color: #ff5252;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        #message-wrapper {
+            display: none;
+            width: 100%;
+            max-height: 70vh;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        #message {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            line-height: 1.8;
+            max-height: 60vh;
+            overflow-y: auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .heart {
+            color: #ff6b6b;
+            font-size: 24px;
+            animation: heartbeat 1.5s infinite;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        #back-btn {
+            margin-top: 20px;
+            background-color: #6b6bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        p {
+            margin-bottom: 20px;
+        }
+        
+        .english {
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="button-container">
+            <div id="gif-container">
+                <img src="https://tenor.com/view/dance-gif-26150372.gif" alt="Romantic GIF">
+            </div>
+            <h1>buat cayaaakk <span class="heart">♥</span></h1>
+            <button id="open-btn">Buka?</button>
+        </div>
+        
+        <div id="message-wrapper">
+            <div id="message">
+                <p>Lima tahun penuh kebersamaan kita. Canda dan tawa, air mata yang jatuh, berantem tapi akhirnya baikan lagi, obrolan serius tengah malam tentang hidup dan mimpi, dan semua momen kecil di antaranya. Dan di sini kita sekarang, masih bertahan, masih memilih satu sama lain setiap harinya. <span class="english">Thank you.</span> Makasih udah mengubah aku menjadi versi yang lebih baik - seseorang yang lebih bijak, lebih kuat, dan lebih aware secara emosional, sesuatu yang dulu bahkan nggak pernah aku bayangkan bisa terjadi.</p>
+
+                <p>Aku masih ingat betapa dinginnya kamu di awal, cuek, kayak es batu yang susah banget dicairin. Tapi lihat kamu sekarang. Kamu berubah jadi seseorang yang begitu hangat, begitu terbuka, begitu cair dalam mengekspresikan perasaan. Aku nggak pernah nyangka kita bisa sampai di titik ini, tapi ternyata bisa.</p>
+
+                <p class="english">I'm so damn lucky ketemu orang seperti kamu.</span> Seseorang yang pemikirannya jauh lebih matang, yang bisa melihat hidup dari sudut pandang yang bahkan nggak pernah terlintas di kepalaku. Aku tahu ada masa lalu yang buat kamu malu, yang bikin kamu mau melupakan semuanya kalau diingat. Tapi buat aku? <span class="english">It's just part of your story.</span> Setiap kesalahan, setiap fase canggung, setiap keputusan yang mungkin kamu sesali semuanya membentuk kamu yang sekarang. Dan kamu yang sekarang adalah orang yang udah ngajarin aku begitu banyak tentang hidup, tentang cinta, bahkan tentang diriku sendiri. Kamu membukakan mataku pada hal-hal yang bahkan nggak pernah aku pikirkan sebelumnya.</p>
+
+                <p>Dan yang paling bikin aku nggak habis pikir, meski aku pernah nyakitin kamu, bahkan mungkin lebih dari sekali, kamu tetap bertahan. Kamu tetap menerima aku apa adanya. Hal itu aja udah bikin kamu jadi salah satu orang paling spesial yang pernah aku temui. Kita udah melewati begitu banyak rintangan, begitu banyak momen di mana kita kayak dua orang asing yang saling bingung. Tapi entah kenapa, akhirnya aku selalu balik ke kamu. Sejauh apa pun aku mencoba cari orang baru, sekeras apa pun aku berusaha move on, nggak ada yang bisa nandingin kamu.</p>
+
+                <p>Makasih udah selalu ada buat dengerin keluh kesah aku yang kadang nggak penting, buat ngertiin mood swings aku yang kadang bikin pusing, buat bangga sama aku bahkan di saat aku sendiri nggak bangga sama diriku. Maaf kalau aku belum bisa membalas semua kebaikanmu. Kamu udah kasih aku segala sesuatu: waktumu, kesabaranmu, cintamu. Sementara kamu sendiri sering lupa buat ngasih yang terbaik buat diri kamu sendiri. Aku berharap bisa membalas semuanya dari apa yang sudah kamu berikan.</p>
+
+                <p>Kamu itu seperti rumah. Tempat aku selalu ingin pulang, tempat aku bisa jadi diri sendiri. Kamu nggak pernah lelah mendukung aku, bahkan di saat aku sendiri meragukan diriku. Kamu selalu punya cara, tanpa pernah memaksa aku jadi sesuatu yang bukan diriku. Dan itu adalah sesuatu yang nggak pernah aku temukan di tempat lain.</p>
+
+                <p>Aku tahu kita nggak sempurna. Kita sering kali tersesat di jalan, kadang kehilangan arah. Tapi di akhir hari, aku selalu tahu bahwa kamu adalah tempatku kembali.</p>
+
+                <p>Sejak kamu datang, begitu banyak hal berubah. Aku berubah. Aku bukan lagi orang yang nakal dan egois kayak dulu. Aku udah belajar dari kesalahan-kesalahan ku dan tumbuh jadi pribadi yang lebih baik, dan itu semua berkat kamu. Kamu adalah alasan aku terus berusaha jadi versi terbaik diriku.</p>
+
+                <p>Aku selalu teringat saat-saat kecil yang sederhana tapi berarti. Cara kamu merespons pesan-pesan kecilku, cara kamu selalu tahu apa yang harus dikatakan ketika aku merasa kehilangan arah, bahkan hal-hal kecil seperti bagaimana kamu diam-diam memperhatikan detail yang aku sendiri lupa. Hal-hal itu adalah pengingat buat aku bahwa aku benar-benar beruntung memiliki kamu di hidupku.</p>
+                
+                <button id="back-btn">Kembali</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const openBtn = document.getElementById('open-btn');
+        const messageWrapper = document.getElementById('message-wrapper');
+        const buttonContainer = document.getElementById('button-container');
+        const backBtn = document.getElementById('back-btn');
+        const body = document.body;
+        
+        openBtn.addEventListener('click', function() {
+            buttonContainer.style.display = 'none';
+            messageWrapper.style.display = 'block';
+            body.style.backgroundColor = '#fff0f0';
+        });
+        
+        backBtn.addEventListener('click', function() {
+            buttonContainer.style.display = 'block';
+            messageWrapper.style.display = 'none';
+            body.style.backgroundColor = '#f5f5f5';
+            // Reset scroll position
+            document.getElementById('message').scrollTop = 0;
+        });
+        
+        // Scroll event untuk pesan
+        document.getElementById('message').addEventListener('scroll', function() {
+            if (this.scrollTop > 50) {
+                backBtn.style.opacity = '1';
+            } else {
+                backBtn.style.opacity = '0.5';
+            }
+        });
+    </script>
+</body>
+</html>
